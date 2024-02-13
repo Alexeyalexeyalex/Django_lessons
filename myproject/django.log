@@ -1,0 +1,149 @@
+INFO 2024-02-06 21:24:04,082 Watching for file changes with StatReloader
+INFO 2024-02-06 21:24:06,122 "GET /coin/ HTTP/1.1" 200 10
+INFO 2024-02-06 21:24:08,280 "GET /coin/ HTTP/1.1" 200 10
+INFO 2024-02-06 21:24:09,473 "GET /coin/ HTTP/1.1" 200 10
+INFO 2024-02-06 21:28:26,419 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-06 21:28:27,180 Watching for file changes with StatReloader
+INFO 2024-02-06 21:28:43,580 "GET /coin/ HTTP/1.1" 200 10
+INFO 2024-02-06 21:28:44,359 "GET /coin/ HTTP/1.1" 200 8
+INFO 2024-02-06 21:28:44,974 "GET /coin/ HTTP/1.1" 200 10
+INFO 2024-02-06 21:30:53,469 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-06 21:30:54,438 Watching for file changes with StatReloader
+ERROR 2024-02-06 21:31:01,577 Internal Server Error: /coin/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: my_logger.<locals>.wrapper() takes 0 positional arguments but 1 was given
+ERROR 2024-02-06 21:31:01,579 "GET /coin/ HTTP/1.1" 500 67059
+INFO 2024-02-06 21:34:42,599 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-06 21:34:43,501 Watching for file changes with StatReloader
+INFO 2024-02-06 21:34:47,604 "GET /coin/ HTTP/1.1" 200 8
+INFO 2024-02-06 21:34:48,489 "GET /coin/ HTTP/1.1" 200 8
+INFO 2024-02-06 21:34:49,183 "GET /coin/ HTTP/1.1" 200 10
+INFO 2024-02-06 21:36:05,161 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\myproject\settings.py changed, reloading.
+INFO 2024-02-06 21:36:05,968 Watching for file changes with StatReloader
+INFO 2024-02-06 21:36:08,335 Была вызвана функция coin
+INFO 2024-02-06 21:36:08,336 "GET /coin/ HTTP/1.1" 200 10
+INFO 2024-02-06 21:36:08,877 Была вызвана функция coin
+INFO 2024-02-06 21:36:08,877 "GET /coin/ HTTP/1.1" 200 10
+INFO 2024-02-06 21:36:09,053 Была вызвана функция coin
+INFO 2024-02-06 21:36:09,054 "GET /coin/ HTTP/1.1" 200 8
+INFO 2024-02-06 21:36:09,232 Была вызвана функция coin
+INFO 2024-02-06 21:36:09,233 "GET /coin/ HTTP/1.1" 200 10
+INFO 2024-02-06 21:36:09,379 Была вызвана функция coin
+INFO 2024-02-06 21:36:09,381 "GET /coin/ HTTP/1.1" 200 10
+INFO 2024-02-06 21:36:33,740 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-06 21:36:34,495 Watching for file changes with StatReloader
+INFO 2024-02-06 21:37:03,245 Была вызвана функция cube
+INFO 2024-02-06 21:37:03,246 "GET /cube/ HTTP/1.1" 200 1
+INFO 2024-02-06 21:37:04,544 Была вызвана функция cube
+INFO 2024-02-06 21:37:04,545 "GET /cube/ HTTP/1.1" 200 1
+INFO 2024-02-06 21:37:04,711 Была вызвана функция cube
+INFO 2024-02-06 21:37:04,711 "GET /cube/ HTTP/1.1" 200 1
+INFO 2024-02-06 21:37:04,901 Была вызвана функция cube
+INFO 2024-02-06 21:37:04,901 "GET /cube/ HTTP/1.1" 200 1
+WARNING 2024-02-06 21:45:03,542 Not Found: /favicon.ico
+WARNING 2024-02-06 21:45:03,543 "GET /favicon.ico HTTP/1.1" 404 2773
+INFO 2024-02-09 20:16:45,328 Watching for file changes with StatReloader
+INFO 2024-02-09 20:16:57,009 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-09 20:16:57,816 Watching for file changes with StatReloader
+INFO 2024-02-09 20:17:07,834 "GET / HTTP/1.1" 200 13
+WARNING 2024-02-09 20:17:08,237 Not Found: /favicon.ico
+WARNING 2024-02-09 20:17:08,238 "GET /favicon.ico HTTP/1.1" 404 2773
+INFO 2024-02-09 20:17:13,920 Была вызвана функция coin
+INFO 2024-02-09 20:17:13,921 "GET /coin/ HTTP/1.1" 200 10
+INFO 2024-02-09 20:17:16,106 Была вызвана функция coin
+INFO 2024-02-09 20:17:16,108 "GET /coin/ HTTP/1.1" 200 10
+INFO 2024-02-09 20:17:16,693 Была вызвана функция coin
+INFO 2024-02-09 20:17:16,694 "GET /coin/ HTTP/1.1" 200 10
+INFO 2024-02-09 20:17:17,162 Была вызвана функция coin
+INFO 2024-02-09 20:17:17,163 "GET /coin/ HTTP/1.1" 200 8
+INFO 2024-02-09 20:20:26,677 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\models.py changed, reloading.
+INFO 2024-02-09 20:20:27,561 Watching for file changes with StatReloader
+INFO 2024-02-09 20:27:29,663 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\models.py changed, reloading.
+INFO 2024-02-09 20:27:30,555 Watching for file changes with StatReloader
+INFO 2024-02-09 20:27:47,797 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\models.py changed, reloading.
+INFO 2024-02-09 20:27:48,605 Watching for file changes with StatReloader
+INFO 2024-02-09 20:28:51,939 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-09 20:28:53,062 Watching for file changes with StatReloader
+INFO 2024-02-09 20:29:03,898 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-09 20:29:04,592 Watching for file changes with StatReloader
+INFO 2024-02-09 20:29:12,436 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-09 20:29:13,436 Watching for file changes with StatReloader
+INFO 2024-02-09 20:29:31,902 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\urls.py changed, reloading.
+INFO 2024-02-09 20:29:32,879 Watching for file changes with StatReloader
+ERROR 2024-02-09 20:29:40,789 Internal Server Error: /statistic/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: statistic() missing 1 required positional argument: 'n'
+ERROR 2024-02-09 20:29:40,792 "GET /statistic/ HTTP/1.1" 500 67873
+INFO 2024-02-09 20:30:18,486 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\urls.py changed, reloading.
+INFO 2024-02-09 20:30:19,344 Watching for file changes with StatReloader
+ERROR 2024-02-09 20:30:27,030 Internal Server Error: /statistic/3
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 33, in statistic
+    return HttpResponse(coin.get_last_n_flip(n))
+AttributeError: 'function' object has no attribute 'get_last_n_flip'
+ERROR 2024-02-09 20:30:27,034 "GET /statistic/3 HTTP/1.1" 500 70563
+INFO 2024-02-09 20:31:37,104 Watching for file changes with StatReloader
+ERROR 2024-02-09 20:31:40,364 Internal Server Error: /statistic/3
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 33, in statistic
+    return HttpResponse(Coin.get_last_n_flip(n))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\models.py", line 10, in get_last_n_flip
+    flips = Coin.objects.all()[-n:]
+TypeError: bad operand type for unary -: 'str'
+ERROR 2024-02-09 20:31:40,369 "GET /statistic/3 HTTP/1.1" 500 74090
+INFO 2024-02-09 20:32:14,102 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\urls.py changed, reloading.
+INFO 2024-02-09 20:32:15,085 Watching for file changes with StatReloader
+ERROR 2024-02-09 20:32:18,266 Internal Server Error: /statistic/3
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 33, in statistic
+    return HttpResponse(Coin.get_last_n_flip(n))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\models.py", line 10, in get_last_n_flip
+    flips = Coin.objects.all()[-n:]
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 431, in __getitem__
+    raise ValueError("Negative indexing is not supported.")
+ValueError: Negative indexing is not supported.
+ERROR 2024-02-09 20:32:18,270 "GET /statistic/3 HTTP/1.1" 500 77917
+INFO 2024-02-09 20:34:19,826 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\models.py changed, reloading.
+INFO 2024-02-09 20:34:20,897 Watching for file changes with StatReloader
+INFO 2024-02-09 20:34:23,676 "GET /statistic/3 HTTP/1.1" 200 18
+INFO 2024-02-09 20:34:26,582 "GET /statistic/3 HTTP/1.1" 200 18
+INFO 2024-02-09 20:34:55,951 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-09 20:34:56,888 Watching for file changes with StatReloader
+INFO 2024-02-09 20:35:14,979 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-09 20:35:15,987 Watching for file changes with StatReloader
+INFO 2024-02-09 20:35:19,066 "GET /statistic/3 HTTP/1.1" 200 68
+INFO 2024-02-09 20:36:21,553 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-09 20:36:22,114 Watching for file changes with StatReloader
+INFO 2024-02-09 20:36:33,867 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-09 20:36:34,732 Watching for file changes with StatReloader
+INFO 2024-02-09 20:36:44,815 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-09 20:36:45,729 Watching for file changes with StatReloader
+INFO 2024-02-09 20:36:48,585 "GET /statistic/3 HTTP/1.1" 200 68
+INFO 2024-02-09 20:36:49,827 "GET /statistic/3 HTTP/1.1" 200 68
+INFO 2024-02-09 20:36:54,659 "GET /statistic/2 HTTP/1.1" 200 68
+INFO 2024-02-09 20:37:09,294 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-09 20:37:10,423 Watching for file changes with StatReloader
+INFO 2024-02-09 20:37:11,577 "GET /statistic/2 HTTP/1.1" 200 32
+INFO 2024-02-09 20:37:17,050 "GET /statistic/3 HTTP/1.1" 200 32
+INFO 2024-02-09 20:37:21,530 "GET /statistic/4 HTTP/1.1" 200 32
+INFO 2024-02-09 20:37:31,022 "GET /statistic/100 HTTP/1.1" 200 32
