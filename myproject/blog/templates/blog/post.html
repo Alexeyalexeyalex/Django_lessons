@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Posts</title>
+</head>
+<body>
+<h1>Статья {{ post.title }} от {{ post.pub_date }}</h1>
+<ul>
+    {{ post.content }}
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Отправить">
+    </form>
+
+    {% for comment in comments %}
+        {% if comment.create_date != comment.edit_date %}
+            <p>Комментарий (Изменено): {{ comment.content }}</p>
+        {% else %}
+            <p>Комментарий: {{ comment.content }}</p>
+        {% endif %}
+
+        <!-- <p>Автор: {{ comment.content }}</p> -->
+        <p>Дата создания: {{ comment.create_date }}</p>
+        <p>Дата изменения: {{ comment.edit_date }}</p>
+
+
+        
+    {% endfor %}
+</ul>
+
+</body>
+</html>

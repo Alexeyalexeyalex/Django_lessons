@@ -20,3 +20,4 @@ class Command(BaseCommand):
             # print(post.title)
 
         return str(posts)
+

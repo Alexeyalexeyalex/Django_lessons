@@ -147,3 +147,1046 @@ INFO 2024-02-09 20:37:11,577 "GET /statistic/2 HTTP/1.1" 200 32
 INFO 2024-02-09 20:37:17,050 "GET /statistic/3 HTTP/1.1" 200 32
 INFO 2024-02-09 20:37:21,530 "GET /statistic/4 HTTP/1.1" 200 32
 INFO 2024-02-09 20:37:31,022 "GET /statistic/100 HTTP/1.1" 200 32
+INFO 2024-02-13 20:35:53,800 Watching for file changes with StatReloader
+INFO 2024-02-13 20:35:57,215 "GET / HTTP/1.1" 200 13
+WARNING 2024-02-13 20:35:57,438 Not Found: /favicon.ico
+WARNING 2024-02-13 20:35:57,439 "GET /favicon.ico HTTP/1.1" 404 3139
+INFO 2024-02-13 20:36:03,596 "GET /coin HTTP/1.1" 301 0
+ERROR 2024-02-13 20:36:03,703 Internal Server Error: /coin/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 13, in wrapper
+    coin = func(*args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 27, in coin
+    return render(request, 'lesson1_2app/base.html', result_list)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than list.
+ERROR 2024-02-13 20:36:03,706 "GET /coin/ HTTP/1.1" 500 90378
+ERROR 2024-02-13 20:36:06,652 Internal Server Error: /coin/2
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 13, in wrapper
+    coin = func(*args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 27, in coin
+    return render(request, 'lesson1_2app/base.html', result_list)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than list.
+ERROR 2024-02-13 20:36:06,654 "GET /coin/2 HTTP/1.1" 500 90523
+INFO 2024-02-13 20:36:19,603 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-13 20:36:20,297 Watching for file changes with StatReloader
+INFO 2024-02-13 20:36:29,557 Watching for file changes with StatReloader
+ERROR 2024-02-13 20:36:31,052 Internal Server Error: /coin/2
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 13, in wrapper
+    coin = func(*args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 27, in coin
+    return render(request, 'lesson1_2app/base.html', result_list)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than list.
+ERROR 2024-02-13 20:36:31,055 "GET /coin/2 HTTP/1.1" 500 90660
+ERROR 2024-02-13 20:36:31,709 Internal Server Error: /coin/2
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 13, in wrapper
+    coin = func(*args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 27, in coin
+    return render(request, 'lesson1_2app/base.html', result_list)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than list.
+ERROR 2024-02-13 20:36:31,712 "GET /coin/2 HTTP/1.1" 500 90672
+INFO 2024-02-13 20:36:43,031 "GET / HTTP/1.1" 200 13
+ERROR 2024-02-13 20:36:47,675 Internal Server Error: /coin/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 13, in wrapper
+    coin = func(*args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 27, in coin
+    return render(request, 'lesson1_2app/base.html', result_list)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than list.
+ERROR 2024-02-13 20:36:47,678 "GET /coin/ HTTP/1.1" 500 90378
+WARNING 2024-02-13 20:38:09,194 Not Found: /favicon.ico
+WARNING 2024-02-13 20:38:09,195 "GET /favicon.ico HTTP/1.1" 404 3139
+INFO 2024-02-13 20:39:18,458 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-13 20:39:19,048 Watching for file changes with StatReloader
+ERROR 2024-02-13 20:39:21,381 Internal Server Error: /coin/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 13, in wrapper
+    coin = func(*args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 27, in coin
+    return render(request, 'lesson1_2app/base.html', result_list)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than list.
+ERROR 2024-02-13 20:39:21,385 "GET /coin/ HTTP/1.1" 500 90503
+ERROR 2024-02-13 20:39:23,673 Internal Server Error: /coin/2
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 13, in wrapper
+    coin = func(*args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 27, in coin
+    return render(request, 'lesson1_2app/base.html', result_list)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than list.
+ERROR 2024-02-13 20:39:23,675 "GET /coin/2 HTTP/1.1" 500 90534
+INFO 2024-02-13 20:41:46,977 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-13 20:41:47,537 Watching for file changes with StatReloader
+INFO 2024-02-13 21:02:05,657 Watching for file changes with StatReloader
+INFO 2024-02-13 21:02:08,002 "GET / HTTP/1.1" 200 13
+INFO 2024-02-13 21:03:02,420 Watching for file changes with StatReloader
+WARNING 2024-02-13 21:03:13,558 Not Found: /posts/Name_0
+WARNING 2024-02-13 21:03:13,559 "GET /posts/Name_0 HTTP/1.1" 404 3142
+INFO 2024-02-13 21:09:15,341 Watching for file changes with StatReloader
+WARNING 2024-02-13 21:09:18,667 Not Found: /posts/Name_0
+WARNING 2024-02-13 21:09:18,669 "GET /posts/Name_0 HTTP/1.1" 404 3142
+WARNING 2024-02-13 21:09:23,260 Not Found: /posts/1
+WARNING 2024-02-13 21:09:23,260 "GET /posts/1 HTTP/1.1" 404 3127
+INFO 2024-02-13 21:10:07,656 Watching for file changes with StatReloader
+WARNING 2024-02-13 21:10:13,591 Not Found: /posts/1
+WARNING 2024-02-13 21:10:13,592 "GET /posts/1 HTTP/1.1" 404 3127
+WARNING 2024-02-13 21:10:14,582 Not Found: /posts/1
+WARNING 2024-02-13 21:10:14,582 "GET /posts/1 HTTP/1.1" 404 3127
+WARNING 2024-02-13 21:10:18,118 Not Found: /posts/2
+WARNING 2024-02-13 21:10:18,120 "GET /posts/2 HTTP/1.1" 404 3127
+WARNING 2024-02-13 21:10:59,641 Not Found: /posts/4
+WARNING 2024-02-13 21:10:59,641 "GET /posts/4 HTTP/1.1" 404 3127
+INFO 2024-02-13 21:14:08,584 Watching for file changes with StatReloader
+WARNING 2024-02-13 21:14:11,455 Not Found: /posts/4
+WARNING 2024-02-13 21:14:11,459 "GET /posts/4 HTTP/1.1" 404 3127
+WARNING 2024-02-13 21:14:13,737 Not Found: /posts/4
+WARNING 2024-02-13 21:14:13,738 "GET /posts/4 HTTP/1.1" 404 3127
+INFO 2024-02-13 21:15:30,958 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\myproject\urls.py changed, reloading.
+INFO 2024-02-13 21:15:31,696 Watching for file changes with StatReloader
+WARNING 2024-02-13 21:15:36,359 Not Found: /posts/4
+WARNING 2024-02-13 21:15:36,359 "GET /posts/4 HTTP/1.1" 404 3514
+WARNING 2024-02-13 21:15:42,590 Not Found: /posts/1
+WARNING 2024-02-13 21:15:42,592 "GET /posts/1 HTTP/1.1" 404 3514
+INFO 2024-02-13 21:16:42,958 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\urls.py changed, reloading.
+INFO 2024-02-13 21:16:43,619 Watching for file changes with StatReloader
+INFO 2024-02-13 21:16:48,393 "GET /posts/1 HTTP/1.1" 301 0
+ERROR 2024-02-13 21:16:48,442 Internal Server Error: /posts/1/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 9, in posts
+    author = get_object_or_404(Author, pk=author_id)
+NameError: name 'get_object_or_404' is not defined
+ERROR 2024-02-13 21:16:48,444 "GET /posts/1/ HTTP/1.1" 500 69530
+INFO 2024-02-13 21:17:24,621 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-13 21:17:25,369 Watching for file changes with StatReloader
+INFO 2024-02-13 21:17:28,298 "GET /posts/1/ HTTP/1.1" 200 250
+INFO 2024-02-13 21:17:33,540 "GET /posts/4 HTTP/1.1" 301 0
+INFO 2024-02-13 21:17:33,548 "GET /posts/4/ HTTP/1.1" 200 318
+INFO 2024-02-13 21:17:49,898 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-13 21:17:50,719 Watching for file changes with StatReloader
+INFO 2024-02-13 21:17:52,633 "GET /posts/4/ HTTP/1.1" 200 318
+INFO 2024-02-13 21:17:53,256 "GET /posts/4/ HTTP/1.1" 200 318
+INFO 2024-02-13 21:17:53,668 "GET /posts/4/ HTTP/1.1" 200 318
+INFO 2024-02-13 21:17:53,835 "GET /posts/4/ HTTP/1.1" 200 318
+INFO 2024-02-13 21:17:56,641 "GET /posts/1/ HTTP/1.1" 200 250
+ERROR 2024-02-13 21:20:05,074 Internal Server Error: /posts/1/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 12, in posts
+    return render(request, 'blog/posts.html', {'posts':posts})
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+ERROR 2024-02-13 21:20:05,080 "GET /posts/1/ HTTP/1.1" 500 148854
+ERROR 2024-02-13 21:20:06,120 Internal Server Error: /posts/1/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 12, in posts
+    return render(request, 'blog/posts.html', {'posts':posts})
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+ERROR 2024-02-13 21:20:06,124 "GET /posts/1/ HTTP/1.1" 500 148854
+ERROR 2024-02-13 21:20:28,595 Internal Server Error: /posts/4/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 12, in posts
+    return render(request, 'blog/posts.html', {'posts':posts})
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+ERROR 2024-02-13 21:20:28,599 "GET /posts/4/ HTTP/1.1" 500 149361
+ERROR 2024-02-13 21:20:44,868 Internal Server Error: /posts/4/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 12, in posts
+    return render(request, 'blog/posts.html', {'posts':posts})
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+ERROR 2024-02-13 21:20:44,872 "GET /posts/4/ HTTP/1.1" 500 149772
+ERROR 2024-02-13 21:20:45,653 Internal Server Error: /posts/4/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 12, in posts
+    return render(request, 'blog/posts.html', {'posts':posts})
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+ERROR 2024-02-13 21:20:45,657 "GET /posts/4/ HTTP/1.1" 500 149772
+ERROR 2024-02-13 21:20:46,306 Internal Server Error: /posts/4/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 12, in posts
+    return render(request, 'blog/posts.html', {'posts':posts})
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+ERROR 2024-02-13 21:20:46,312 "GET /posts/4/ HTTP/1.1" 500 149772
+INFO 2024-02-13 21:20:51,447 "GET /posts/4/ HTTP/1.1" 200 336
+INFO 2024-02-13 21:24:11,033 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-13 21:24:11,597 Watching for file changes with StatReloader
+INFO 2024-02-13 21:27:51,937 Watching for file changes with StatReloader
+INFO 2024-02-13 21:28:07,605 "GET /posts/post/1 HTTP/1.1" 301 0
+ERROR 2024-02-13 21:28:07,705 Internal Server Error: /posts/post/1/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 14, in author_post
+    posts = Post.objects.filter(post_id=post_id)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'post_id' into field. Choices are: author, author_id, category, comment, content, id, ispublic, pub_date, title, views_count
+ERROR 2024-02-13 21:28:07,710 "GET /posts/post/1/ HTTP/1.1" 500 114485
+INFO 2024-02-13 21:29:55,367 Watching for file changes with StatReloader
+ERROR 2024-02-13 21:30:00,007 Internal Server Error: /posts/post/1/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 14, in author_post
+    posts = Post.objects.filter(post_id=post_id)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'post_id' into field. Choices are: author, author_id, category, comment, content, id, ispublic, pub_date, title, views_count
+ERROR 2024-02-13 21:30:00,018 "GET /posts/post/1/ HTTP/1.1" 500 114622
+ERROR 2024-02-13 21:30:03,759 Internal Server Error: /posts/post/2/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 14, in author_post
+    posts = Post.objects.filter(post_id=post_id)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'post_id' into field. Choices are: author, author_id, category, comment, content, id, ispublic, pub_date, title, views_count
+ERROR 2024-02-13 21:30:03,766 "GET /posts/post/2/ HTTP/1.1" 500 114485
+INFO 2024-02-13 21:31:56,800 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-13 21:31:57,892 Watching for file changes with StatReloader
+INFO 2024-02-13 21:32:20,432 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-13 21:32:21,241 Watching for file changes with StatReloader
+INFO 2024-02-13 21:32:28,033 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-13 21:32:28,889 Watching for file changes with StatReloader
+INFO 2024-02-13 21:33:23,394 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-13 21:33:24,199 Watching for file changes with StatReloader
+INFO 2024-02-13 21:33:29,211 Watching for file changes with StatReloader
+ERROR 2024-02-13 21:33:39,991 Internal Server Error: /posts/post/2/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 14, in author_post
+    posts = Post.objects.filter(post_id=post_id)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'post_id' into field. Choices are: author, author_id, category, comment, content, id, ispublic, pub_date, title, views_count
+ERROR 2024-02-13 21:33:39,995 "GET /posts/post/2/ HTTP/1.1" 500 115208
+ERROR 2024-02-13 21:33:43,317 Internal Server Error: /posts/post/1/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 14, in author_post
+    posts = Post.objects.filter(post_id=post_id)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'post_id' into field. Choices are: author, author_id, category, comment, content, id, ispublic, pub_date, title, views_count
+ERROR 2024-02-13 21:33:43,320 "GET /posts/post/1/ HTTP/1.1" 500 115071
+INFO 2024-02-13 21:34:41,917 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-13 21:34:42,714 Watching for file changes with StatReloader
+ERROR 2024-02-13 21:34:46,402 Internal Server Error: /posts/post/1/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 14, in author_post
+    posts = Post.objects.get(post_id=post_id)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'post_id' into field. Choices are: author, author_id, category, comment, content, id, ispublic, pub_date, title, views_count
+ERROR 2024-02-13 21:34:46,411 "GET /posts/post/1/ HTTP/1.1" 500 119826
+INFO 2024-02-13 21:35:31,517 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-13 21:35:32,328 Watching for file changes with StatReloader
+INFO 2024-02-13 21:35:41,475 "GET /posts/post/1/ HTTP/1.1" 200 3177
+INFO 2024-02-13 21:35:46,316 "GET /posts/post/4 HTTP/1.1" 301 0
+INFO 2024-02-13 21:35:46,324 "GET /posts/post/4/ HTTP/1.1" 200 4508
+INFO 2024-02-13 21:39:44,475 "GET /posts/post/2/ HTTP/1.1" 200 3853
+INFO 2024-02-13 21:39:50,050 "GET /posts/post/5/ HTTP/1.1" 200 3733
+INFO 2024-02-13 21:43:40,293 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-13 21:43:40,863 Watching for file changes with StatReloader
+INFO 2024-02-13 21:45:07,312 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-13 21:45:07,866 Watching for file changes with StatReloader
+INFO 2024-02-13 21:46:53,628 "GET /posts/post/4/ HTTP/1.1" 200 4514
+INFO 2024-02-13 21:46:54,387 "GET /posts/post/4/ HTTP/1.1" 200 4514
+INFO 2024-02-13 21:46:54,556 "GET /posts/post/4/ HTTP/1.1" 200 4514
+INFO 2024-02-13 21:46:54,710 "GET /posts/post/4/ HTTP/1.1" 200 4514
+INFO 2024-02-13 21:46:54,854 "GET /posts/post/4/ HTTP/1.1" 200 4514
+INFO 2024-02-13 21:47:08,793 Watching for file changes with StatReloader
+INFO 2024-02-13 21:47:12,335 "GET /posts/post/4/ HTTP/1.1" 200 4514
+INFO 2024-02-13 21:47:15,177 "GET /posts/post/1/ HTTP/1.1" 200 3183
+INFO 2024-02-13 21:47:43,259 "GET /posts/post/2/ HTTP/1.1" 200 3859
+INFO 2024-02-13 21:48:43,795 "GET /posts/post/2/ HTTP/1.1" 200 7228
+INFO 2024-02-13 21:50:48,870 "GET /posts/post/2/ HTTP/1.1" 200 7378
+INFO 2024-02-13 21:50:49,790 "GET /posts/post/2/ HTTP/1.1" 200 7378
+INFO 2024-02-13 21:52:48,303 "GET /posts/post/2/ HTTP/1.1" 200 11074
+WARNING 2024-02-13 21:57:05,541 Not Found: /favicon.ico
+WARNING 2024-02-13 21:57:05,546 "GET /favicon.ico HTTP/1.1" 404 3526
+INFO 2024-02-16 20:24:42,778 Watching for file changes with StatReloader
+INFO 2024-02-16 20:24:44,381 "GET / HTTP/1.1" 200 13
+WARNING 2024-02-16 20:24:44,656 Not Found: /favicon.ico
+WARNING 2024-02-16 20:24:44,656 "GET /favicon.ico HTTP/1.1" 404 3700
+WARNING 2024-02-16 20:24:55,530 Not Found: /all_games/
+WARNING 2024-02-16 20:24:55,531 "GET /all_games/ HTTP/1.1" 404 3697
+INFO 2024-02-16 20:25:03,063 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\urls.py changed, reloading.
+INFO 2024-02-16 20:25:03,687 Watching for file changes with StatReloader
+INFO 2024-02-16 20:25:05,998 "GET /all_games/ HTTP/1.1" 200 1049
+ERROR 2024-02-16 20:25:19,829 Internal Server Error: /all_games/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 49, in random_games
+    return coin(request, count)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 14, in wrapper
+    coin = func(*args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py", line 28, in coin
+    return render(request, 'lesson1_2app/base.html', result_list)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than list.
+ERROR 2024-02-16 20:25:19,832 "POST /all_games/ HTTP/1.1" 500 95595
+INFO 2024-02-16 20:26:46,987 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-16 20:26:47,658 Watching for file changes with StatReloader
+INFO 2024-02-16 20:27:37,494 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-16 20:27:38,080 Watching for file changes with StatReloader
+INFO 2024-02-16 20:27:39,423 "GET / HTTP/1.1" 200 13
+INFO 2024-02-16 20:27:43,758 Была вызвана функция coin
+INFO 2024-02-16 20:27:43,759 "POST /all_games/ HTTP/1.1" 200 205
+INFO 2024-02-16 20:27:48,493 "GET /all_games/ HTTP/1.1" 200 1049
+INFO 2024-02-16 20:27:50,356 Была вызвана функция coin
+INFO 2024-02-16 20:27:50,356 "POST /all_games/ HTTP/1.1" 200 247
+INFO 2024-02-16 20:28:01,331 "GET /all_games/ HTTP/1.1" 200 1049
+INFO 2024-02-16 20:28:35,939 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\form.py changed, reloading.
+INFO 2024-02-16 20:28:36,567 Watching for file changes with StatReloader
+INFO 2024-02-16 20:29:09,997 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\form.py changed, reloading.
+INFO 2024-02-16 20:29:10,577 Watching for file changes with StatReloader
+INFO 2024-02-16 20:29:14,157 "GET /all_games/ HTTP/1.1" 200 1083
+INFO 2024-02-16 20:29:49,687 "GET /all_games/ HTTP/1.1" 200 996
+INFO 2024-02-16 20:30:14,485 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-16 20:30:15,127 Watching for file changes with StatReloader
+INFO 2024-02-16 20:30:57,782 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\lesson1_2app\views.py changed, reloading.
+INFO 2024-02-16 20:30:58,350 Watching for file changes with StatReloader
+INFO 2024-02-16 20:31:05,587 "GET /all_games/ HTTP/1.1" 200 996
+INFO 2024-02-16 20:31:10,473 Была вызвана функция cube
+INFO 2024-02-16 20:31:10,473 "POST /all_games/ HTTP/1.1" 200 1
+INFO 2024-02-16 20:31:11,772 "GET /all_games/ HTTP/1.1" 200 996
+INFO 2024-02-16 20:31:14,352 Была вызвана функция number
+INFO 2024-02-16 20:31:14,353 "POST /all_games/ HTTP/1.1" 200 2
+INFO 2024-02-16 20:31:15,483 "GET /all_games/ HTTP/1.1" 200 996
+INFO 2024-02-16 20:59:44,579 Watching for file changes with StatReloader
+INFO 2024-02-16 20:59:45,909 "GET / HTTP/1.1" 200 13
+INFO 2024-02-16 20:59:52,892 "GET /author HTTP/1.1" 301 0
+ERROR 2024-02-16 20:59:52,933 Internal Server Error: /author/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 34, in author_form
+    return render(request, 'blog/author_form.html', {'form', form})
+UnboundLocalError: local variable 'form' referenced before assignment
+ERROR 2024-02-16 20:59:52,935 "GET /author/ HTTP/1.1" 500 68858
+ERROR 2024-02-16 21:01:01,680 Internal Server Error: /author/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 34, in author_form
+    return render(request, 'blog/author_form.html', {'form', form})
+UnboundLocalError: local variable 'form' referenced before assignment
+ERROR 2024-02-16 21:01:01,683 "GET /author/ HTTP/1.1" 500 68995
+INFO 2024-02-16 21:03:18,870 Watching for file changes with StatReloader
+INFO 2024-02-16 21:03:27,985 Watching for file changes with StatReloader
+INFO 2024-02-16 21:07:04,591 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\models.py changed, reloading.
+INFO 2024-02-16 21:07:05,150 Watching for file changes with StatReloader
+ERROR 2024-02-16 21:07:10,168 Internal Server Error: /author/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 34, in author_form
+    return render(request, 'blog/author_form.html', {'form', form})
+UnboundLocalError: local variable 'form' referenced before assignment
+ERROR 2024-02-16 21:07:10,169 "GET /author/ HTTP/1.1" 500 68995
+INFO 2024-02-16 21:09:22,753 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-16 21:09:23,349 Watching for file changes with StatReloader
+ERROR 2024-02-16 21:09:25,056 Internal Server Error: /author/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 34, in author_form
+    return render(request, 'blog/author_form.html', {'form', form})
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than set.
+ERROR 2024-02-16 21:09:25,059 "GET /author/ HTTP/1.1" 500 85819
+ERROR 2024-02-16 21:09:25,772 Internal Server Error: /author/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 34, in author_form
+    return render(request, 'blog/author_form.html', {'form', form})
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than set.
+ERROR 2024-02-16 21:09:25,775 "GET /author/ HTTP/1.1" 500 85819
+INFO 2024-02-16 21:09:57,276 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-16 21:09:57,830 Watching for file changes with StatReloader
+INFO 2024-02-16 21:10:02,120 Watching for file changes with StatReloader
+ERROR 2024-02-16 21:10:04,979 Internal Server Error: /author/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 34, in author_form
+    return render(request, 'blog/author_form.html', {'form', form})
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than set.
+ERROR 2024-02-16 21:10:04,982 "GET /author/ HTTP/1.1" 500 85819
+ERROR 2024-02-16 21:10:05,603 Internal Server Error: /author/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 34, in author_form
+    return render(request, 'blog/author_form.html', {'form', form})
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than set.
+ERROR 2024-02-16 21:10:05,606 "GET /author/ HTTP/1.1" 500 85819
+ERROR 2024-02-16 21:10:05,776 Internal Server Error: /author/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 34, in author_form
+    return render(request, 'blog/author_form.html', {'form', form})
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than set.
+ERROR 2024-02-16 21:10:05,778 "GET /author/ HTTP/1.1" 500 85819
+INFO 2024-02-16 21:11:00,148 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\forms.py changed, reloading.
+INFO 2024-02-16 21:11:00,735 Watching for file changes with StatReloader
+INFO 2024-02-16 21:11:19,865 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\forms.py changed, reloading.
+INFO 2024-02-16 21:11:20,434 Watching for file changes with StatReloader
+INFO 2024-02-16 21:12:09,684 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\forms.py changed, reloading.
+INFO 2024-02-16 21:12:10,250 Watching for file changes with StatReloader
+INFO 2024-02-16 21:12:21,067 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\forms.py changed, reloading.
+INFO 2024-02-16 21:12:21,604 Watching for file changes with StatReloader
+INFO 2024-02-16 21:12:35,377 "GET / HTTP/1.1" 200 13
+ERROR 2024-02-16 21:12:42,766 Internal Server Error: /author/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 34, in author_form
+    return render(request, 'blog/author_form.html', {'form', form})
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than set.
+ERROR 2024-02-16 21:12:42,769 "GET /author/ HTTP/1.1" 500 85682
+INFO 2024-02-16 21:14:35,958 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-16 21:14:36,550 Watching for file changes with StatReloader
+INFO 2024-02-16 21:14:38,759 "GET /author/ HTTP/1.1" 200 1130
+INFO 2024-02-16 21:14:52,239 "POST /author/ HTTP/1.1" 200 1350
+INFO 2024-02-16 21:16:02,796 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\forms.py changed, reloading.
+INFO 2024-02-16 21:16:03,372 Watching for file changes with StatReloader
+INFO 2024-02-16 21:16:23,157 "POST /author/ HTTP/1.1" 200 1385
+INFO 2024-02-16 21:16:39,566 "POST /author/ HTTP/1.1" 200 1310
+INFO 2024-02-16 21:18:02,643 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\forms.py changed, reloading.
+INFO 2024-02-16 21:18:03,214 Watching for file changes with StatReloader
+INFO 2024-02-16 21:18:06,378 "POST /author/ HTTP/1.1" 200 1549
+INFO 2024-02-16 21:18:15,216 "POST /author/ HTTP/1.1" 200 1489
+INFO 2024-02-16 21:18:25,441 "POST /author/ HTTP/1.1" 200 1489
+INFO 2024-02-16 21:19:22,782 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\forms.py changed, reloading.
+INFO 2024-02-16 21:19:23,345 Watching for file changes with StatReloader
+INFO 2024-02-16 21:19:31,162 Watching for file changes with StatReloader
+INFO 2024-02-16 21:19:32,385 "GET / HTTP/1.1" 200 13
+INFO 2024-02-16 21:19:36,749 "GET /author/ HTTP/1.1" 200 1165
+INFO 2024-02-16 21:19:49,871 "POST /author/ HTTP/1.1" 200 1379
+INFO 2024-02-16 21:19:58,671 "POST /author/ HTTP/1.1" 200 1298
+INFO 2024-02-16 21:21:23,530 "POST /author/ HTTP/1.1" 200 1298
+INFO 2024-02-16 21:21:30,623 "POST /author/ HTTP/1.1" 200 1311
+ERROR 2024-02-16 21:21:47,891 Internal Server Error: /author/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 31, in author_form
+    return redirect('author_form')
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'author_form' not found. 'author_form' is not a valid view function or pattern name.
+ERROR 2024-02-16 21:21:47,894 "POST /author/ HTTP/1.1" 500 89249
+INFO 2024-02-16 21:22:44,239 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-16 21:22:44,847 Watching for file changes with StatReloader
+INFO 2024-02-16 21:22:49,420 Watching for file changes with StatReloader
+INFO 2024-02-16 21:22:50,584 "GET / HTTP/1.1" 200 13
+INFO 2024-02-16 21:22:55,719 "GET /author/ HTTP/1.1" 200 1165
+ERROR 2024-02-16 21:23:05,191 Internal Server Error: /author/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 31, in author_form
+    return redirect('author_form')
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'author_form' not found. 'author_form' is not a valid view function or pattern name.
+ERROR 2024-02-16 21:23:05,194 "POST /author/ HTTP/1.1" 500 89244
+INFO 2024-02-16 21:24:03,728 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\urls.py changed, reloading.
+INFO 2024-02-16 21:24:04,294 Watching for file changes with StatReloader
+INFO 2024-02-16 21:24:09,385 "POST /author/ HTTP/1.1" 302 0
+INFO 2024-02-16 21:24:09,404 "GET /author/ HTTP/1.1" 200 1165
+INFO 2024-02-16 21:27:05,466 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\forms.py changed, reloading.
+INFO 2024-02-16 21:27:06,027 Watching for file changes with StatReloader
+INFO 2024-02-16 21:29:31,467 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\forms.py changed, reloading.
+INFO 2024-02-16 21:29:32,155 Watching for file changes with StatReloader
+INFO 2024-02-16 21:31:12,862 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\forms.py changed, reloading.
+INFO 2024-02-16 21:31:13,486 Watching for file changes with StatReloader
+INFO 2024-02-16 21:32:10,743 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\forms.py changed, reloading.
+INFO 2024-02-16 21:32:11,284 Watching for file changes with StatReloader
+INFO 2024-02-16 21:43:14,525 Watching for file changes with StatReloader
+INFO 2024-02-16 21:43:19,395 "GET / HTTP/1.1" 200 13
+INFO 2024-02-16 21:43:26,125 "GET /post/ HTTP/1.1" 200 2043
+INFO 2024-02-16 21:44:14,844 "POST /post/ HTTP/1.1" 302 0
+INFO 2024-02-16 21:44:14,859 "GET /post/ HTTP/1.1" 200 2043
+INFO 2024-02-16 21:46:25,112 "GET /posts/post/2/ HTTP/1.1" 200 11074
+INFO 2024-02-16 21:46:25,861 "GET /posts/post/2/ HTTP/1.1" 200 11074
+INFO 2024-02-16 21:47:11,660 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\forms.py changed, reloading.
+INFO 2024-02-16 21:51:17,620 Watching for file changes with StatReloader
+INFO 2024-02-16 21:51:19,734 "GET /posts/post/2/ HTTP/1.1" 200 11308
+INFO 2024-02-16 21:52:30,582 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-16 21:52:31,213 Watching for file changes with StatReloader
+INFO 2024-02-16 21:52:56,474 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-16 21:52:57,035 Watching for file changes with StatReloader
+INFO 2024-02-16 21:58:45,903 Watching for file changes with StatReloader
+INFO 2024-02-16 21:58:48,992 "GET /posts/post/2/ HTTP/1.1" 200 12283
+INFO 2024-02-16 21:59:21,416 "POST /posts/post/2/ HTTP/1.1" 200 12549
+INFO 2024-02-16 21:59:57,889 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-16 21:59:58,452 Watching for file changes with StatReloader
+ERROR 2024-02-16 22:00:03,975 Internal Server Error: /posts/post/2/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 29, in author_post
+    redirect('author_post')
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'author_post' with no arguments not found. 1 pattern(s) tried: ['posts/post/(?P<post_id>[0-9]+)/\\Z']
+ERROR 2024-02-16 22:00:03,982 "POST /posts/post/2/ HTTP/1.1" 500 96801
+INFO 2024-02-16 22:00:36,302 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-16 22:00:36,862 Watching for file changes with StatReloader
+ERROR 2024-02-16 22:00:40,902 Internal Server Error: /posts/post/2/
+Traceback (most recent call last):
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py", line 29, in author_post
+    return redirect('author_post')
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\2\Desktop\Учеба\GeekBrains\Django\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'author_post' with no arguments not found. 1 pattern(s) tried: ['posts/post/(?P<post_id>[0-9]+)/\\Z']
+ERROR 2024-02-16 22:00:40,907 "POST /posts/post/2/ HTTP/1.1" 500 96853
+INFO 2024-02-16 22:01:46,782 C:\Users\2\Desktop\Учеба\GeekBrains\Django\myproject\blog\views.py changed, reloading.
+INFO 2024-02-16 22:01:47,367 Watching for file changes with StatReloader
+INFO 2024-02-16 22:01:51,992 "POST /posts/post/2/ HTTP/1.1" 302 0
+INFO 2024-02-16 22:01:52,022 "GET /posts/post/2/ HTTP/1.1" 200 13263
+INFO 2024-02-16 22:01:56,016 "POST /posts/post/2/ HTTP/1.1" 302 0
+INFO 2024-02-16 22:01:56,029 "GET /posts/post/2/ HTTP/1.1" 200 13509

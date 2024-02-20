@@ -6,10 +6,12 @@ class Author(models.Model):
     email = models.EmailField()
     bio = models.TextField()
     birthdate = models.DateField()
-    full_name = models.CharField(max_length=200)
+    full_name = models.CharField(max_length=200, default='')
 
-    def fullname(self):
-        return f'{self.first_name} {self.second_name}'
+    def save(self, *args, **kwargs):
+        self.full_name = f'{self.first_name} {self.second_name}'
+        super().save(*args, **kwargs)
+
 
 class Post(models.Model):
     title = models.CharField(max_length=200)
@@ -27,5 +29,5 @@ class Comment(models.Model):
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     content = models.TextField()
-    create_date = models.DateField()
-    edit_date = models.DateField()
+    create_date = models.DateField(auto_now_add=True)
+    edit_date = models.DateField(auto_now=True)
